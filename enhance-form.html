@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhanced Form</title>
+  </head>
+  <body>
+    <header>
+      <h1>Gym Membership</h1>
+      <p>
+        Join our classes today and begin your journey towards a better health.
+      </p>
+    </header>
+    <main>
+      <section>
+        <h2>Class Categories</h2>
+        <ol>
+          <li>High Intensity Interval Training (HIIT)</li>
+          <li>Cardio</li>
+          <li>Circuit Training</li>
+          <li>Zumba</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Gym Schedule</h2>
+        <table>
+          <caption>
+            Weekly Fitness Class Schedule
+          </caption>
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Time</th>
+              <th>Category</th>
+              <th>Coach</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monday</td>
+              <td>6:00 AM - 7:00 AM</td>
+              <td>(HIIT)</td>
+              <td>John Ombara</td>
+            </tr>
+
+            <tr>
+              <td>Wednesday</td>
+              <td>6:00 AM - 7:00 AM</td>
+              <td>Cardio</td>
+              <td>Vanessa Wanesi</td>
+            </tr>
+
+            <tr>
+              <td>Friday</td>
+              <td>6:00 AM - 7:00 AM</td>
+              <td>Circuit Training</td>
+              <td>Alphonce Imara</td>
+            </tr>
+
+            <tr>
+              <td>Saturday</td>
+              <td>6:00 PM - 7:00 PM</td>
+              <td>Zumba</td>
+              <td>Vanessa Makacha</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Preview</h2>
+        <img
+          src="gym.jpg"
+          alt=""
+          width="300"
+        />
+        <figcaption>A sneak peek of our gym facilities</figcaption>
+      </section>
+
+      <section>
+        <h2>Register Here!</h2>
+        <form action="">
+          <fieldset>
+            <legend>Personal Info.</legend>
+            <label for="fullname">Full Name:</label>
+            <input
+              type="text"
+              id="full-name"
+              name="full-name"
+              required
+              minlength="2"
+              placeholder="Your Full Name*"
+            />
+
+            <label for="email">Email:</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              required
+              autocomplete="email"
+              placeholder="Your Email*"
+            />
+
+            <label for="phone">Phone Number:</label>
+            <input
+              type="tell"
+              id="phone"
+              name="phone"
+              placeholder="123456789"
+              autocomplete="tel"
+              pattern="[0-9]{10}"
+            />
+          </fieldset>
+
+          <fieldset>
+            <legend>Preferences</legend>
+            <label for="category">Preferred Category:</label>
+            <select name="category" id="category" required>
+              <option value="">Select a Category</option>
+              <option value="hiit">HIIT</option>
+              <option value="cardio">Cardio</option>
+              <option value="circuit">Circuit Training</option>
+              <option value="zumba">Zumba</option>
+            </select>
+
+            <legend>Fitness Goals:</legend>
+            <input
+              type="checkbox"
+              id="flexibility"
+              name="flexibility"
+              value="flexibility"
+            />
+            <label for="flexibility">Improve Flexibility</label>
+
+            <input
+              type="checkbox"
+              id="endurance"
+              name="endurance"
+              value="endurance"
+            />
+            <label for="flexibility">Endurance</label>
+
+            <input
+              type="checkbox"
+              id="strength"
+              name="strength"
+              value="strength"
+            />
+            <label for="flexibility">Strength Training</label>
+          </fieldset> 
+
+          <input type="submit" value="Sign Up">
+        </form>
+      </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Gym Membership. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
